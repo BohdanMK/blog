@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.min.css">
+    <title>Головна</title>
+</head>
+<body>
+
+
+<div class="page">
+        <!--Header-->
+    <header class="header">
+    <div class="header__left">
+        <nav class="nav">
+            <ul class="nav__list">
+                <li class="nav__iteam">
+                    <a class="nav__link" href="index.html">Гловна</a>
+                </li>
+                <li class="nav__iteam">
+                    <a class="nav__link has-subnav" href="">Статті</a>
+
+                    <ul class="subnav">
+                        <li >
+                            <a class="subnav__link" href="../post.html">Створення сайтів</a>
+                        </li>
+                        <li>
+                            <a class="subnav__link" href="">Интернет-маркетинг</a>
+                        </li>
+                        <li>
+                            <a class="subnav__link" href="">Просування сайтів</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="nav__iteam">
+                    <a class="nav__link" href="../aboutme.html"> Про мене </a>
+                </li>
+                <li class="nav__iteam">
+                    <a class="nav__link" href="">Реклама</a>
+                </li>
+
+            </ul>
+        </nav>
+
+        <button class="burger show-sidebar" type="button" id="sidebarToggle">
+            <span>Відкрити меню</span>
+        </button>
+    </div>
+    <div class="header__right">
+        <nav class="nav">
+            <ul class="nav__list">
+                <li class="nav__iteam">
+                    <a class="nav__link" href="../profile.html">Профіль</a>
+                </li>
+
+                <li class="nav__iteam">
+                    <a class="nav__link" href="../signin.html">Увійти</a>
+                </li>
+            </ul>
+        </nav>
+        <form class="search" action="/" method="post">
+            <input class="search__input" type="text" placeholder="Поиск по блогу">
+        </form>
+    </div>
+</header>
+        <!--Sidebar-->
+    <aside class="sidebar" id="sidebar">
+    <div class="sibebar__header">
+        <img src="img/sidebar.jpg" alt="">
+    </div>
+    <div class="sidebar__body">
+        <div class="profile">
+            <img class="profile__avatar" src="https://via.placeholder.com/100" alt="">
+
+            <div class="profile__header">
+                <div class="profile__name">Богдан Христевич</div>
+                <div class="profile__prof">Веб розробник</div>
+            </div>
+
+
+            <ul class="social">
+                <li class="social__iteam">
+                    <a href="" class="social__link" target="_blank">
+                        <img src="img/socialsvg/instagram.svg" alt="">
+                    </a>
+                </li>
+
+                <li class="social__iteam">
+                    <a href="" class="social__link" target="_blank">
+                        <img src="img/socialsvg/pinterest.svg" alt="">
+                    </a>
+                </li>
+
+                <li class="social__iteam">
+                    <a href="" class="social__link" target="_blank">
+                        <img src="img/socialsvg/vk.svg" alt="">
+                    </a>
+                </li>
+            </ul> <!--Social-->
+            <div class="profile__text">
+                <p>
+                    WEB DEVELOPER
+                </p>
+            </div>
+        </div> <!--Profile-->
+
+        <nav class="nav nav--mobile">
+            <ul class="nav__list">
+                <li class="nav__iteam">
+                    <a class="nav__link" href="index.html">Головна</a>
+                </li>
+                <li class="nav__iteam">
+                    <a class="nav__link has-subnav" href="">Статті</a>
+
+                    <ul class="subnav">
+                        <li >
+                            <a class="subnav__link" href="">Створення сайтів</a>
+                        </li>
+                        <li>
+                            <a class="subnav__link" href="">Интернет-маркетинг</a>
+                        </li>
+                        <li>
+                            <a class="subnav__link" href="">Просування відео</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="nav__iteam">
+                    <a class="nav__link" href="../aboutme.html"> Про мне </a>
+                </li>
+                <li class="nav__iteam">
+                    <a class="nav__link" href="">Реклама</a>
+                </li>
+
+            </ul>
+        </nav>
+    </div>
+    <div class="sidebar__footer">
+        <a class="btn btn--red" href="../works.html">Мої роботи</a>
+        <button class="btn btn--blue" type="button" data-modal="contact-modal">Написати мені</button>
+    </div>
+</aside>
+
+
+        <!--main-->
+    <main class="main">
+    <div class="container">
+        <!--Stories-->
+        <div class="stories">
+            <div class="stories__iteam" data-modal="story-modal">
+                <img class="stories__preview" src="img/socialsvg/storiesimg/rest.jpg" alt="">
+                <div class="stories__title">Відпочинок</div>
+                <time class="stories__date" datetime="2020-09-21 19:21">21.09.2020</time>
+            </div>
+            <div class="stories__iteam">
+                <img class="stories__preview" src="img/socialsvg/storiesimg/office.jpg" alt="">
+                <div class="stories__title">Робота</div>
+                <time class="stories__date"  datetime="2020-09-21 19:21">21.09.2020</time>
+
+            </div>
+            <div class="stories__iteam">
+                <img class="stories__preview" src="img/socialsvg/storiesimg/home.jpg" alt="">
+                <div class="stories__title">Дім</div>
+                <time class="stories__date"  datetime="2020-09-21 19:21">21.09.2020</time>
+            </div>
+            <div class="stories__iteam">
+                <img class="stories__preview" src="img/socialsvg/storiesimg/nature.jpg" alt="">
+                <div class="stories__title">Природа</div>
+                <time class="stories__date"  datetime="2020-09-21 19:21">21.09.2020</time>
+            </div>
+        </div><!--Stories-->
+
+        <!--add post-->
+        <div class="add-post">
+            <form class="add-post__form" action="/" method="post">
+                <textarea class="add-post__textarea" name="post-text" placeholder="Напишіть щось" data-autoresize></textarea>
+                <div class="add-post__form-action">
+                    <label class="app-post__file" for="add-post-file">
+                        <input type="file" id="add-post-file">
+                    </label>
+                    <button class="app-post__send" type="submit">
+                        <img src="img/socialsvg/storiesimg/send-btn.svg" alt="">
+                    </button>
+                </div>
+            </form>
+        </div>
+        <!--fast post-->
+        <div class="post">
+            <div class="post__content">
+                <p class="post__description">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum pariatur sunt est molestias animi commodi exercitationem dolorem minima repudiandae, ut praesentium, distinctio aperiam excepturi deserunt! Id officiis sunt perferendis mollitia!
+                </p>
+            </div>
+            <div class="post__footer">
+                <ul class="post__data">
+                    <li class="post__time">
+                        <time datetime="2022-06-21 19:20">21.06.2022</time>
+                    </li>
+                </ul>
+            </div>
+        </div> <!--firsth post-->
+        <!--normal post-->
+        <article class="post">
+            <div class="post__header post__header--prewiew">
+                <img class="post__img"  src="img/postimg/one.jpg" alt="Как писать код быстро и безболезненно?">
+            </div>
+            <div class="post__content">
+                <h3 class="post__title">
+                    <a class="post__title-link" href="">Як писати код швидко і якісно?</a>
+                </h3>
+
+                <p class="post__description">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum pariatur sunt est molestias animi commodi exercitationem dolorem minima repudiandae, ut praesentium, distinctio aperiam excepturi deserunt! Id officiis sunt perferendis mollitia!
+                </p>
+            </div>
+            <div class="post__footer">
+                <ul class="post__data">
+                    <li class="post__data-iteam">
+                        <time datetime="2022-06-21 19:20">21.06.2022</time>
+                    </li>
+                    <li class="post__data-iteam">
+                        <a href="">створення сайтів</a>
+                    </li>
+                </ul>
+
+                <a class="post__read" href="">читати</a>
+            </div>
+        </article> <!--normal post-->
+
+        <!--normal post-->
+        <article class="post">
+            <div class="post__header">
+                <div class="embet">
+                    <iframe  src="https://www.youtube.com/embed/QRXzZSMzE7k" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+            </div>
+            <div class="post__content">
+                <h3 class="post__title">
+                    <a class="post__title-link" href="">Як потрапить в IT?</a>
+                </h3>
+
+            </div>
+            <div class="post__footer">
+                <ul class="post__data">
+                    <li class="post__data-iteam">
+                        <time datetime="2022-06-21 19:20">21.06.2022</time>
+                    </li>
+                    <li class="post__data-iteam">
+                        <a href="">продвижение видео</a>
+                    </li>
+                </ul>
+
+                <a class="post__read" href="">оставить комментарий</a>
+            </div>
+        </article> <!--normal post-->
+
+        <!--normal post-->
+        <article class="post">
+            <div class="post__header post__header--prewiew">
+                <img class="post__img"  src="img/postimg/tech.jpg" alt="Как писать код быстро и безболезненно?">
+            </div>
+            <div class="post__content">
+                <h3 class="post__title">
+                    <a class="post__title-link" href="">Як я вибирав напрямок в IT?</a>
+                </h3>
+
+                <p class="post__description">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum pariatur sunt est molestias animi commodi exercitationem dolorem minima repudiandae, ut praesentium, distinctio aperiam excepturi deserunt! Id officiis sunt perferendis mollitia!
+                </p>
+            </div>
+            <div class="post__footer">
+                <ul class="post__data">
+                    <li class="post__data-iteam">
+                        <time datetime="2022-06-21 19:20">21.06.2022</time>
+                    </li>
+                    <li class="post__data-iteam">
+                        <a href="">конференція</a>
+                    </li>
+                </ul>
+
+                <a class="post__read" href="">читати</a>
+            </div>
+        </article> <!--normal post-->
+
+        <!--pagination-->
+        <ul class="pagination">
+            <li class="pagination__iteam">
+                <a class="pagination__link" href="#">&lt;</a>
+            </li>
+            <li class="pagination__iteam">
+                <a class="pagination__link" href="#">1</a>
+            </li>
+            <li class="pagination__iteam">
+                <a class="pagination__link active" href="#">2</a>
+            </li>
+            <li class="pagination__iteam">
+                <a class="pagination__link" href="#">3</a>
+            </li>
+            <li class="pagination__iteam">
+                <a class="pagination__link" href="#">&gt;</a>
+            </li>
+        </ul>
+    </div> <!--container-->
+</main>
+        <!--modal-->
+    <div class="modal" id="story-modal">
+    <div class="modal__content modal__content--video">
+        <video class="modal__video" src="" poster="https://via.placeholder.com/427x588"></video>
+    </div>
+</div>
+    <div class="modal" id="contact-modal">
+    <div class="modal__content">
+        <button class="modal__close" type="button">
+            <img class="modal__close-icon" src="img/modalimg/Close.svg" alt="">
+        </button>
+
+        <form class="form form--modal" action="/" method="post">
+
+            <div class="form__group form__group--mb">
+                <input class="form__control" type="text" placeholder="Мое імя" value="Богдан Христевич">
+                <span class="form__line"></span>
+            </div>
+            <div class="form__group form__group--mb">
+                <input class="form__control" type="email" placeholder="Мій еmail" value="">
+                <span class="form__line"></span>
+            </div>
+            <div class="form__group form__group--mb">
+                <textarea class="form__control" type="email" placeholder="Напишіть текст" value=""></textarea>
+                <span class="form__line"></span>
+            </div>
+
+            <button class="btn btn--blue btn--rounded btn--sm">Віправити</button>
+        </form>
+
+        <ul class="form__footer">
+            <li class="form__footer-iteam" >
+                <a class="form__footer-link" href="" type="email:b.m.khristevich@gmail.com">
+                    email: b.m.khristevich@gmail.com
+                </a>
+            </li>
+            <li class="form__footer-iteam">
+                <a class="form__footer-link" href="" type="tel:+94323285622">
+                    тел: +943-232-856-22
+                </a>
+            </li>
+        </ul>
+    </div>
+</div>
+    <div class="modal">
+    <div class="modal__content modal__content-icon">
+        <button class="modal__close" type="button">
+            <img class="modal__close-icon" src="img/modalimg/Close.svg" alt="">
+        </button>
+
+        <ul class="modal__list">
+            <li class="modal__list-iteam">
+                <a href="">
+                    <img src="img/modalimg/facebook.svg" alt="">
+                </a>
+            </li>
+            <li class="modal__list-iteam">
+                <a href="">
+                    <img src="img/modalimg/Group.svg" alt="">
+                </a>
+            </li>
+            <li class="modal__list-iteam">
+                <a href="">
+                    <img src="img/modalimg/Vk.svg" alt="">
+                </a>
+            </li>
+            <li class="modal__list-iteam">
+                <a href="">
+                    <img src="img/modalimg/filew.svg" alt="">
+                </a>
+            </li>
+        </ul>
+    </div>
+</div>
+
+</div>
+    <!--JS-->
+<script src="js/app.min.js"></script>
+</body>
+</html>

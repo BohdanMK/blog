@@ -1,0 +1,74 @@
+.comments {
+    margin-top: 5rem;
+}
+
+.comments__iteam {
+    > .comments {
+        margin-top: 2rem;
+        padding-left: 4rem;
+        margin-bottom: 3rem;
+
+        @include breakpoint($tablet-bp) {
+            margin-top: 1rem;
+            padding-left: 2rem;
+            margin-bottom: 1rem;
+        }
+    }
+}
+
+.comments__header {
+    display: flex;
+    margin-bottom: 1.5rem;
+    line-height: 1.2rem;
+}
+
+.comments__avatar {
+    width: 3rem;
+    height: 3rem;
+
+    border-radius: 50%;
+}
+
+.comments__autor {
+    flex-grow: 1;
+    margin-left: 1.5rem;
+
+}
+
+.comments__name {
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: $white;
+}
+
+.comments__pubdate {
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: #757575;
+}
+
+.comments__text {
+    font-size: 1.2rem;
+    font-weight: 400;
+    color: $white;
+    line-height: 1.2;
+    margin-bottom: .5rem;
+}
+
+.comments__reply {
+    padding: 0;
+    background: none;
+    border: none;
+
+
+    font-family: inherit;
+    font-style: inherit;
+    font-size: 1.2rem;
+    color: $blue;
+    cursor: pointer;
+
+    &:hover {
+        text-decoration: underline;
+    }
+
+}

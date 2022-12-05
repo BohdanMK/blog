@@ -1,0 +1,45 @@
+.related {
+    border-bottom: 1px solid #1c1c1c;
+    padding-bottom: 0.5rem;
+}
+
+
+
+.related__list {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.related__iteam {
+    width: 50%;
+    margin-bottom: 2.5rem;
+    padding-right: .5rem;
+
+    @include breakpoint($tablet-bp) {
+        width: 100%;
+    }
+}
+
+.related__iteam-title {
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.related__link {
+        text-decoration: none;
+        font-size: 1.4rem;
+        color: #F3EBA2;
+        font-weight: 600;
+        transition: .2s linear;
+
+        &:hover {
+        color: darken($color: #F3EBA2, $amount: 5%);
+        }
+
+}
+
+.related__date {
+    font-size: 1.2rem;
+    color: #828282;
+}

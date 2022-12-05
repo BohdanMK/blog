@@ -1,0 +1,40 @@
+.pagination {
+    display: flex;
+    justify-content: center;
+
+    margin: 8rem;
+
+    @include breakpoint($tablet-bp) {
+        margin-bottom: 5rem;
+    }
+}
+
+.pagination__iteam {
+    margin: 0 .5rem;
+}
+
+.pagination__link {
+    display: block;
+    width: 4rem;
+    height: 4rem;
+
+    font-size: 1.4rem;
+    color: $white;
+    line-height: 4rem;
+    text-decoration: none;
+
+    background-color: #0D0D0D;
+    border-radius: 3px;
+    box-shadow: 0 0 10px rgba($color: #000000, $alpha: .25);
+
+    text-align: center;
+
+    &:hover {
+        background-color: lighten($color: #0d0d0d, $amount: 2%);
+    }
+
+    &.active {
+        background-color: #104BE3;
+        box-shadow: 0 0 15px rgba($color: #000000, $alpha: 1.0);
+    }
+}
