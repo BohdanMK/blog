@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.min.css">
+    <title>Пост</title>
+</head>
+<body>
+
+
+<div class="page">
+        <!--Header-->
+    <header class="header">
+    <div class="header__left">
+        <nav class="nav">
+            <ul class="nav__list">
+                <li class="nav__iteam">
+                    <a class="nav__link" href="index.html">Гловна</a>
+                </li>
+                <li class="nav__iteam">
+                    <a class="nav__link has-subnav" href="">Статті</a>
+
+                    <ul class="subnav">
+                        <li >
+                            <a class="subnav__link" href="../post.html">Створення сайтів</a>
+                        </li>
+                        <li>
+                            <a class="subnav__link" href="">Интернет-маркетинг</a>
+                        </li>
+                        <li>
+                            <a class="subnav__link" href="">Просування сайтів</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="nav__iteam">
+                    <a class="nav__link" href="../aboutme.html"> Про мене </a>
+                </li>
+                <li class="nav__iteam">
+                    <a class="nav__link" href="">Реклама</a>
+                </li>
+
+            </ul>
+        </nav>
+
+        <button class="burger show-sidebar" type="button" id="sidebarToggle">
+            <span>Відкрити меню</span>
+        </button>
+    </div>
+    <div class="header__right">
+        <nav class="nav">
+            <ul class="nav__list">
+                <li class="nav__iteam">
+                    <a class="nav__link" href="../profile.html">Профіль</a>
+                </li>
+
+                <li class="nav__iteam">
+                    <a class="nav__link" href="../signin.html">Увійти</a>
+                </li>
+            </ul>
+        </nav>
+        <form class="search" action="/" method="post">
+            <input class="search__input" type="text" placeholder="Поиск по блогу">
+        </form>
+    </div>
+</header>
+        <!--Sidebar-->
+    <aside class="sidebar" id="sidebar">
+    <div class="sibebar__header">
+        <img src="img/sidebar.jpg" alt="">
+    </div>
+    <div class="sidebar__body">
+        <div class="profile">
+            <img class="profile__avatar" src="https://via.placeholder.com/100" alt="">
+
+            <div class="profile__header">
+                <div class="profile__name">Богдан Христевич</div>
+                <div class="profile__prof">Веб розробник</div>
+            </div>
+
+
+            <ul class="social">
+                <li class="social__iteam">
+                    <a href="" class="social__link" target="_blank">
+                        <img src="img/socialsvg/instagram.svg" alt="">
+                    </a>
+                </li>
+
+                <li class="social__iteam">
+                    <a href="" class="social__link" target="_blank">
+                        <img src="img/socialsvg/pinterest.svg" alt="">
+                    </a>
+                </li>
+
+                <li class="social__iteam">
+                    <a href="" class="social__link" target="_blank">
+                        <img src="img/socialsvg/vk.svg" alt="">
+                    </a>
+                </li>
+            </ul> <!--Social-->
+            <div class="profile__text">
+                <p>
+                    WEB DEVELOPER
+                </p>
+            </div>
+        </div> <!--Profile-->
+
+        <nav class="nav nav--mobile">
+            <ul class="nav__list">
+                <li class="nav__iteam">
+                    <a class="nav__link" href="index.html">Головна</a>
+                </li>
+                <li class="nav__iteam">
+                    <a class="nav__link has-subnav" href="">Статті</a>
+
+                    <ul class="subnav">
+                        <li >
+                            <a class="subnav__link" href="">Створення сайтів</a>
+                        </li>
+                        <li>
+                            <a class="subnav__link" href="">Интернет-маркетинг</a>
+                        </li>
+                        <li>
+                            <a class="subnav__link" href="">Просування відео</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="nav__iteam">
+                    <a class="nav__link" href="../aboutme.html"> Про мне </a>
+                </li>
+                <li class="nav__iteam">
+                    <a class="nav__link" href="">Реклама</a>
+                </li>
+
+            </ul>
+        </nav>
+    </div>
+    <div class="sidebar__footer">
+        <a class="btn btn--red" href="../works.html">Мої роботи</a>
+        <button class="btn btn--blue" type="button" data-modal="contact-modal">Написати мені</button>
+    </div>
+</aside>
+
+    <!--Myprofile-->
+   <div class="page">
+    <main class="main">
+        <div class="container">
+            <h1 class="page__title page__title--center">Реєстрація</h1>
+
+            <form class="form form--center" action="/" method="post">
+
+                        <div class="form__group form__group--mb">
+                            <input class="form__control" type="text" placeholder="Мое імя" value="Богдан Христевич">
+                            <span class="form__line"></span>
+                        </div>
+                        <div class="form__group form__group--mb">
+                            <input class="form__control" type="email" placeholder="Мій еmail" value="">
+                            <span class="form__line"></span>
+                        </div>
+                        <div class="form__group form__group--mb">
+                            <input class="form__control" type="email" placeholder="Новий пароль" value="">
+                            <span class="form__line"></span>
+                        </div>
+                        <div class="form__group form__group--mb">
+                            <input class="form__control" type="email" placeholder="Підтвердити пароль" value="">
+                            <span class="form__line"></span>
+                        </div>
+
+                <button class="btn btn--blue btn--rounded btn--sm">Сохранить</button>
+
+                <ul class="form__footer">
+                    <li class="form__footer-iteam">
+                        <a href="../restore.html">Відновити</a>
+                    </li>
+                    <li class="form__footer-iteam">
+                        <a href="../signin.html">Увійти</a>
+                    </li>
+                </ul>
+
+            </form>
+
+
+        </div>
+    </main>
+</div>
+
+
+</div>
+    <!--JS-->
+<script src="js/app.min.js"></script>
+</body>
+</html>
